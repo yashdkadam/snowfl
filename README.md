@@ -17,7 +17,7 @@ pip install snowfl
 Before making API requests, you need to initialize the Snowfl instance by fetching the API key. This key is required to access the Snowfl API.
 
 ```python
-from snowfl_api import Snowfl, ApiError, FetchError
+from snowfl import Snowfl, ApiError, FetchError
 
 snowfl = Snowfl()
 try:
