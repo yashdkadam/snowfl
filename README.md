@@ -1,6 +1,6 @@
 # Snowfl API Python Wrapper
 
-This is an unofficial Python wrapper for the [Snowfl](https://snowfl.com/) API. Snowfl is a platform for searching and accessing torrent files. With this wrapper, you can programmatically search for torrents based on your queries and preferences.
+This is an unofficial Python wrapper for the [Snowfl](https://snowfl.com/) API, inspired by the work of [c0dysharma](https://github.com/c0dysharma/snowfl-api). Snowfl is a platform for searching and accessing torrent files. With this wrapper, you can programmatically search for torrents based on your queries and preferences.
 
 ## Installation
 
