@@ -17,7 +17,7 @@ pip install snowfl
 Before making API requests, you need to initialize the Snowfl instance by fetching the API key. This key is required to access the Snowfl API.
 
 ```python
-from snowfl_api import Snowfl, ApiError, FetchError
+from snowfl import Snowfl, ApiError, FetchError
 
 snowfl = Snowfl()
 try:
@@ -31,13 +31,16 @@ except ApiError as e:
 You can use the `parse` method to search the Snowfl site for torrents. You need to provide a search query, and you can optionally specify various parameters to customize your search.
 
 ```python
+from pprint import pprint
+
+
 try:
     query = "JoJo"
     sort = "MAX_SEED"  # Sorting by maximum seeders
     include_nsfw = False  # Exclude NSFW content
 
     result = snowfl.parse(query, sort=sort, include_nsfw=include_nsfw)
-    print(result)
+    pprint(result)
 except FetchError as e:
     print(f"Error searching Snowfl: {e}")
 ```
