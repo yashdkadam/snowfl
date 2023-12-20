@@ -1,0 +1,7 @@
+.coverage
+.vscode
+*pycache*
+cov.xml
+myenv
+scripts
+temp*
